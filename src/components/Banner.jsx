@@ -8,7 +8,12 @@ import slider4 from '../assets/banner/banner-4.png'
 const Banner = () => {
     return (
         <div>
-            <Carousel>
+            <Carousel
+                autoPlay
+                infiniteLoop
+                interval={3000}
+                showThumbs={false}
+                showStatus={false}>
                 <div>
                     <img src={slider1} />
                 </div>
