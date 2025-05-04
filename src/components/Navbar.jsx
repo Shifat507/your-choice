@@ -7,7 +7,7 @@ const Navbar = () => {
         <li><NavLink>All Products</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100 shadow-sm px-3">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Sign in</a>
+                <a className="btn bg-red-600 text-white rounded-lg">Sign in</a>
             </div>
         </div>
     );

@@ -12,8 +12,9 @@ const Banner = () => {
                 autoPlay
                 infiniteLoop
                 interval={3000}
-                showThumbs={false}
-                showStatus={false}>
+                showThumbs={true}
+                showStatus={false}
+                stopOnHover={false}>
                 <div>
                     <img src={slider1} />
                 </div>
