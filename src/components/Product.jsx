@@ -16,10 +16,10 @@ const Product = ({ product }) => {
     //     : null;
 
     return (
-        <div className='group shadow-2xl rounded-lg  relative overflow-hidden'>
+        <div className='group shadow-2xl rounded-lg  relative overflow-hidden px-6 md:px-0 w-64 mx-auto'>
             <div>
                 <img className='w-full h-64 object-cover rounded-lg' src={`https://admin.refabry.com/storage/product/${image}`} alt={name} />
-                <div className="absolute bottom-14 left-3 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                <div className="absolute bottom-14 md:bottom-20 lg:bottom-14 left-3 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
                     {category.name}
                 </div>
             </div>

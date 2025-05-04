@@ -19,7 +19,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="text-2xl font-bold cursor-pointer">Your <span className='text-red-600'>Choice</span></a>
+                <a className="text-md md:text-2xl font-bold cursor-pointer">Your <span className='text-red-600'>Choice</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

@@ -9,8 +9,8 @@ const Products = () => {
             .then(data => setProducts(data.data.data.data))
     }, [])
     return (
-        <div className='my-20 md:max-w-6xl mx-auto'>
-            <h2 className='text-4xl font-bold text-red-900 mb-8 gap-3'>
+        <div className='my-20 max-w-sm md:max-w-2xl lg:max-w-6xl mx-auto'>
+            <h2 className='ml-6 md:ml-0 text-xl md:text-4xl font-bold text-red-900 mb-8 gap-3'>
                 <Typewriter
                     words={['Available Products']}
                     loop={true}
