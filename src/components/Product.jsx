@@ -23,7 +23,7 @@ const Product = ({ product }) => {
     return (
         <div
             onClick={handleToggleDetails}
-            className='group shadow-2xl rounded-lg relative overflow-hidden px-6 md:px-0 w-64 md:w-52 lg:w-64 mx-auto cursor-pointer'
+            className='group shadow-2xl rounded-lg relative overflow-hidden px-6 md:px-0 w-72 md:w-52 lg:w-64 mx-auto cursor-pointer'
         >
             <div>
                 <img
