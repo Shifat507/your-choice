@@ -4,6 +4,7 @@ import {
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../pages/Home";
 import Products from "../components/Products";
+import ProductDetails from "../pages/ProductDetails";
 // import Home from "../pages/Home";
 
 export const router = createBrowserRouter([
@@ -18,7 +19,12 @@ export const router = createBrowserRouter([
             {
                 path: '/products',
                 element: <Products></Products>
-            }
+            },
+            {
+                path: '/products/:id',
+                element: <ProductDetails></ProductDetails>,
+                loader: ()=> fetch('https://admin.refabry.com/api/all/product/get')
+            },
         ]
     },
 ]);

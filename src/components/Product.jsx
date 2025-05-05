@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Product = ({ product }) => {
     const {
+        id,
         image,
         name,
         price,
@@ -44,16 +46,16 @@ const Product = ({ product }) => {
                 ${showDetails ? 'opacity-100 translate-y-0 -left-0.5 md:left-0' : 'opacity-0 translate-y-5 -left-0.5 md:left-0'}
                 group-hover:opacity-100 group-hover:translate-y-0
             `}>
-                <div className='flex justify-between mb-2'>
+                <div className='flex justify-between mb-2 items-center'>
                     <span className="text-lg font-semibold text-black">
                         ${price.toFixed(2)}
                     </span>
                     <span className="badge badge-outline">{stock} in stock</span>
                 </div>
                 <div className='text-center mt-4'>
-                    <button className='btn bg-red-900 hover:bg-red-800 text-white text-lg font-semibold rounded-xl px-12 md:px-8 lg:px-12 py-2'>
-                        Add to Cart
-                    </button>
+                    <Link to={`/products/${id}`} className='btn bg-red-900 hover:bg-red-800 text-white text-lg font-semibold rounded-xl px-16 md:px-10 lg:px-16 py-2'>
+                        Details
+                    </Link>
                 </div>
             </div>
         </div>
