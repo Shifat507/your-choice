@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const links = <>
@@ -19,7 +19,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="text-md md:text-2xl font-bold cursor-pointer">Your <span className='text-red-600'>Choice</span></a>
+                <Link to='/' className="text-md md:text-2xl font-bold cursor-pointer">Your <span className='text-red-600'>Choice</span></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
